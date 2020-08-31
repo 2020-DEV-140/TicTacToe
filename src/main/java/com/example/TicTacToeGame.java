@@ -22,7 +22,7 @@ public class TicTacToeGame {
     public CommandLineRunner demo(PlayerRepository playerRepository) {
         return args -> {
             playerRepository.save(new Player("george", "george@george.com", new Argon2PasswordEncoder().encode("george")));
-            playerRepository.save(new Player("mary", "mary@mary.com",  new Argon2PasswordEncoder().encode("mary")));
+            playerRepository.save(new Player("bnptest", "bnptest@bnptest.com",  new Argon2PasswordEncoder().encode("bnptest")));
         };
     }
     
