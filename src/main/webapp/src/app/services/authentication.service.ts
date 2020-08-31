@@ -16,7 +16,7 @@ export class AuthenticationService {
       {authorization : 'Basic ' + btoa(username + ':' + password)}
     );
 
-    this.http.get('user', {headers: headers})
+    this.http.get('/game/user', {headers: headers})
       .subscribe(response => {
         this.authenticated = true;
         this.router.navigateByUrl('/game');
