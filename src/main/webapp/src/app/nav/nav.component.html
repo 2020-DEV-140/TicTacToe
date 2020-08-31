@@ -1,0 +1,14 @@
+<div *ngIf="authenticationService.isAuthenticated()" class="container">
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand">TicTacToe game</a>
+      </div>
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="/logout">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
