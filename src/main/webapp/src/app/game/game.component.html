@@ -1,0 +1,77 @@
+<app-nav></app-nav>
+
+<div class="form-group">
+  <div class="row pt-5">
+    <div class="col-md-4 pl-5">
+
+      <div class="form-group ">
+        <label for="gameOption">
+          <strong translate>select letter</strong>
+        </label>
+        <select id="gameOption" [disabled]="isCreateNewAllowed == false" class="form-control"
+                [(ngModel)]="selectedOption">
+          <option *ngFor="let option of gameOptions" [ngValue]="option.name">{{option.name}}</option>
+        </select>
+
+        <button class="btn btn-info btn-s mt-3" [disabled]="isCreateNewAllowed == false" (click)="createGame()">Create
+          Game
+        </button>
+      </div>
+    </div>
+
+
+    <div class="col-md-3 pl-5">
+      <label>Player selection : {{selectedOption}}</label>
+
+      <div [ngClass]="{'disableDiv': isCreateNewAllowed}">
+        <div *ngFor="let row of gamePanel; let i = index" class="tablerow"
+             [ngClass]="{'black-border-bottom': (i == 0 || i == 1)}">
+          <div id="{{column.id}}" class="{{column.class}}" *ngFor="let column of row; let j = index"
+               [ngClass]="{'black-border-right': (j == 0 || j == 1)}">
+            <div (click)="markPlayerMove(column)" class="boxContent {{column.letter}}"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-5 pr-5">
+      <label>Move history : </label>
+
+      <div class="card b-all shadow-none">
+        <div *ngIf="gameHistoryList && gameHistoryList.length > 0"
+             class="inbox-center table-responsive">
+          <table class="table table-hover">
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Board Row</th>
+              <th>Board Column</th>
+              <th>Player</th>
+              <th>Letter</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let histItem of gameHistoryList; let i = index">
+              <td>
+                {{i + 1}}
+              </td>
+              <td>
+                {{histItem.boardRow}}
+              </td>
+              <td>
+                {{histItem.boardColumn}}
+              </td>
+              <td>
+                {{histItem.player}}
+              </td>
+              <td>
+                {{histItem.piece}}
+              </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

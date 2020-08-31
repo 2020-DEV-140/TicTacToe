@@ -1,0 +1,51 @@
+.box {
+  width: 33.3%;
+  padding-bottom: 33.3%;
+  color: #FFF;
+  position: relative;
+  float: left;
+}
+
+.black-border-bottom {
+  border-bottom: 1px solid black;
+}
+
+.black-border-right {
+  border-right: 1px solid black;
+}
+
+.tablerow {
+  display: block;
+  overflow: hidden;
+}
+
+.disableDiv{
+  pointer-events:none;
+}
+
+.board {
+  background: url("../../assets/images/board2.png");
+  background-repeat: no-repeat;
+}
+
+.boxContent {
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+}
+
+.X {
+  background: url("../../assets/images/X_black.png");
+  background-size: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.O {
+  background: url("../../assets/images/O_black.png");
+  background-size: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
