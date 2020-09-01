@@ -15,7 +15,7 @@ PostgreSQL/H2
 
 ## Usage
 
-To install the game, run mvn spring-boot:run\
+To install the game, run mvn spring-boot:run, open a browser and type http://localhost:8080\
 To execute the tests, run mvn test\
 To simplify both application and test execution, the H2 embedded database has been configured with two user accounts, namely *george* and *bnptest* (same user/pass)
 
@@ -32,5 +32,5 @@ Business logic — the application’s business logic consisting of transaction-
 Persistence layer —  DAOs and JPA entities responsible for accessing the database\
 Database layer — development was done in PostgreSQL\
 Authentication — only registered users can access the system. User passwords are hashed usign Argon2, as this is considered a better candidate than the other popular options, such as MD5, BCrypt and SCrypt\
-Unit testing — Several test cases were designed for each layer of the architecture not with the aim of preparing a production-ready system, but to demonstrate basic testing  practices.
+Unit testing — Several test cases were designed for each layer of the architecture not with the aim of preparing a production-ready system, but to demonstrate basic testing  practices
 
