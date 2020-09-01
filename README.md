@@ -15,7 +15,7 @@ PostgreSQL/H2
 
 ## Usage
 
-To install the game, run mvn spring-boot:run, open a browser and type http://localhost:8080. (Note: the application has been tested with Firefox 80, Chrome 83, and Microsoft Edge 85)\
+To install the game, run mvn spring-boot:run, open a browser and type http://localhost:8080 (Note: the application has been tested with Firefox 80, Chrome 83, and Microsoft Edge 85)\
 To execute the tests, run mvn test\
 To simplify both application and test execution, the H2 embedded database has been configured with two user accounts, namely *george* and *bnptest* (same user/pass)
 
