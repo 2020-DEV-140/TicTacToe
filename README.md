@@ -10,7 +10,7 @@ Spring Boot 2.2.9 (Spring Security, Spring Data JPA)\
 Hibernate 5.4\
 Angular 10\
 Maven\
-PostgreSQL/H2\
+PostgreSQL/H2
 
 
 ## Usage
