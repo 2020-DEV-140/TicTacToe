@@ -6,7 +6,7 @@ This project is an implementation of the traditional TicTacToe game written in J
 ## Tech Stack
 
 Java 8\
-Spring Boot 2.2.9 (Spring Security, Spring Data JPA)\
+Spring Boot 2.2.9 (Spring 5, Spring Security, Spring Data JPA)\
 Hibernate 5.4\
 Angular 10\
 Maven\
