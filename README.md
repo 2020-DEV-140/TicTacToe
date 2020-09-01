@@ -6,18 +6,18 @@ This project is an implementation of the traditional TicTacToe game written in J
 ## Tech Stack
 
 Java 8\
-Spring Boot 2.2.9 (Spring Security, Spring Data JPA)
-Hibernate 5.4
-Angular 10
-Maven 
-PostgreSQL/H2
+Spring Boot 2.2.9 (Spring Security, Spring Data JPA)\
+Hibernate 5.4\
+Angular 10\
+Maven\
+PostgreSQL/H2\
 
 
 ## Usage
 
-To install the game, run mvn spring-boot:run
-To execute the tests, run mvn test
-To simplify both application and test execution, the H2 embedded database has been configured with two user accounts, namely george, bnp-test (same user/pass)
+To install the game, run mvn spring-boot:run\
+To execute the tests, run mvn test\
+To simplify both application and test execution, the H2 embedded database has been configured with two user accounts, namely george, bnp-test (same user/pass)\
 
 
 ## How to play
