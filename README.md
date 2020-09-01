@@ -17,7 +17,7 @@ PostgreSQL/H2
 
 To install the game, run mvn spring-boot:run\
 To execute the tests, run mvn test\
-To simplify both application and test execution, the H2 embedded database has been configured with two user accounts, namely *george* and *bnp-test* (same user/pass)
+To simplify both application and test execution, the H2 embedded database has been configured with two user accounts, namely *george* and *bnptest* (same user/pass)
 
 
 ## How to play
