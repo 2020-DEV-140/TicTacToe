@@ -30,5 +30,5 @@ This enterprise application consists of the following components:\
 Presentation — implemented by an Angular-based front-end and REST controllers at the back-end exchanging information through DTOs.\
 Business logic — the application’s business logic consisting of transaction-aware services.\
 Database layer — data access objects (DAOs) and JPA entities responsible for accessing the database.\
-Authentication — only registered users can access the system. User passwords are hashed usign Argon2, as this is considered a better candidate than the other options, e.g. MD5, BCrypt and SCrypt.
+Authentication — only registered users can access the system. User passwords are hashed usign Argon2, as this is considered a better candidate than the other popular options, such as MD5, BCrypt and SCrypt.
 
