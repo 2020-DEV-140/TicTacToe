@@ -25,6 +25,10 @@ Registered users are asked to login before playing the game against the computer
 X always plays first, which means that if the user chooses X, she/he initiates the game, otherwise she/he has to wait for the computer move provided by the system. Piece choice is only available at login.
 
 
-
-
+## Notes
+This enterprise application consists of the following components:\
+Presentation — implemented by an Angular-based front-end and REST controllers at the back-end exchanging information through DTOs.\
+Business logic — the application’s business logic consisting of transaction-aware services.\
+Database layer — data access objects (DAOs) and JPA entities responsible for accessing the database.\
+Authentication — only registered users can access the system. User passwords are hashed usign Argon2, as this is considered a better candidate than the other options, e.g. MD5, BCrypt and SCrypt.
 
